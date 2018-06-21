@@ -70,6 +70,7 @@ namespace SymbolicLink
                         if (string.CompareOrdinal(s, source) == 0)
                         {
                             Log($"{s} linked to {target}, Very Good\n");
+                            CheckSource(source);
                             continue;
                         }
                         Log($"{s} not link to {target},Remove. ({s})");
